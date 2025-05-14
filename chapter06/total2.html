@@ -4,33 +4,53 @@
 		<title> FAQ </title>
 		<meta charset="UTF-8" />
 		<style type="text/css">
-			body {
-				background:url(images/pattern_gray.png);
-				margin:50px 0px 0px 0px;
-				}
-		
-			h1 {
-				background:#ffffff;
-				padding:5px;
-				text-align:center;
-				margin-bottom:30px;
-				border-top:1px solid #000000;
-				border-bottom:5px solid #000000;
-				}
-
-			#faqBox {
-				font:9pt "맑은 고딕", 돋움;
-				line-height:150%;
-				color:#efefef;
-				width:500px;
-				padding:10px;
-				margin:0px auto;
-				background:#666666;
-				border:2px solid #efefef;
-				border-radius:10px;
-				box-shadow:0px 0px 20px #000000;
-				}
-
+			body{
+				background: url(./images/pattern_gray.png);
+				margin-top: 50px;
+			}
+			h1{
+				background: #fff;
+				text-align: center;
+				border-top: 1px solid #000;
+				border-bottom: 5px solid #000;
+			}
+			#faqBox{
+				background: #5f5f5f;
+				width: 500px;
+				margin: 20px auto;
+				padding: 20px;
+				border: 3px solid #fff;
+				border-radius: 20px;
+				box-shadow: 0 0 20px #000;
+				color: #fff;
+				font-size: 12px;
+			}
+			h2{
+				border-bottom: 1px dashed #fff;
+				padding-left: 20px;
+				padding-bottom: 5px;
+			}
+			dt{
+				background: #000;
+				padding: 5px;
+				border-radius: 5px;
+				margin-left: 20px;
+				font-weight: bold;
+			}
+			dt::before{
+				content: "Q...";
+				font-size: 17px;
+				color: #18ff24;
+			}
+			dd{
+				margin: 20px;
+				text-align: justify;
+			}
+			dd::before{
+				content: "A...";
+				font-size: 17px;
+				color: #65f76c;
+			}
 		</style>
 	</head>
 
