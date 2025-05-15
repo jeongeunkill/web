@@ -24,14 +24,104 @@
 				width:600px;
 				margin:25px auto;
 				}
-			section dl {
-				float:left;
-				}
 			section dt, section dd {
-				display:none;
+				display:inline;
 				}
 			/* Transform */	
-		
+		    #book1 {
+			    width: 170px;
+			    height: 48px;
+			    background: #f00;
+				color: #fff;
+				font-size: 2em;
+				overflow: hidden;
+				transition: width 0.5s;
+		    }
+			#book1:hover{
+				width: 900px;
+			}
+			#book2 {
+				 width: 230px;
+			    height: 48px;
+			    background: rgb(89, 0, 255);
+				color: #fff;
+				font-size: 2em;
+				overflow: hidden;
+				transition: width 0.5s;
+			}
+			#book2:hover{
+				width: 1800px;
+			}
+			.box{
+				position: absolute;
+				top: 50%;
+				left: 50%;
+				transform: translate(-50%, -50%);
+			}
+			.rect{
+                width: 100px;
+				height: 100px;
+				border-radius: 0;
+				background: red;
+				/* transition-property: background-color, border-radius;
+				transition-duration: 1s; */
+				transition: background-color, border-radius 1S ;
+			}
+			.box:hover .rect{
+				border-radius: 50%;
+				background: #a5a4fd;
+			}
+			.rect1{
+				width: 100px;
+				height: 100px;
+				background: rgb(255, 192, 227);
+				margin: 100px;
+				transition: 1s;
+			}
+			.rect1:hover{
+			    transform: scale(2) perspective(120px) rotateX(180deg);
+			}
+			.b{
+				width: 100px;
+				height: 100px;
+				background: rgb(187, 30, 121);
+				float: left;
+				margin: 100px;
+			}
+			.box2{
+				transform: scale(1);
+				transition: 2s;
+
+			}
+			.box2:hover{
+				transform: scaleY(1.5);
+			}
+			.box3{
+				transform: rotate(0deg);
+				transition: 2s;
+
+			}
+			.box3:hover{
+				transform: rotate(560deg);
+			}
+			.box4{
+				transform: skew(0deg);
+				transition: .3s;
+
+			}
+			.box4:hover{
+				transform: skewX(40deg);
+			}
+			.box5{
+				transform: translateX(0px);
+				transition: .3s;
+
+			}
+			.box5:hover{
+				transform: translateX(100px);
+			}
+
+
 		</style>
 	</head>
 
@@ -51,5 +141,15 @@
 			 <dd>캐릭터 디자인부터 고급 일러스트까지 만는 벡터 그래픽툴.</dd>
 			</dl>
 		</section>		
+		<div class="box">
+			<div class="rect"></div>
+		</div>
+		<div class="box1">
+			<div class="rect1"></div>
+		</div>
+		<div class="box2 b"></div>
+		<div class="box3 b"></div>
+		<div class="box4 b"></div>
+		<div class="box5 b"></div>
 	</body>
 </html>
